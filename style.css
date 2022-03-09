@@ -1,5 +1,56 @@
+/* Typography */
+
 body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
 		'Segoe UI Symbol';
+	font-size: 24px;
 }
+
+/* Layout */
+body {
+	display: flex;
+}
+
+.side-container {
+	background-image: url(./suganth-cuIPyl8Xd1E-unsplash.jpg);
+	background-position: center;
+	background-size: cover;
+	flex: 1;
+	height: 90vh;
+}
+
+.main-container {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.form-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3rem 2rem;
+}
+
+.form-entry {
+	position: relative;
+}
+label {
+	position: absolute;
+	top: 2px;
+	left: 5px;
+}
+
+p {
+	max-width: 40rem;
+}
+
+.form-container > p {
+	width: 100%;
+	max-width: 100%;
+}
+/* style */
