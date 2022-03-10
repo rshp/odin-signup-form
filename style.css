@@ -154,3 +154,7 @@ input:not(:placeholder-shown) + label {
 	color: #ad5f38;
 	transition: all 0.2s ease-out;
 }
+
+.required {
+	color: rgb(216, 86, 35);
+}
