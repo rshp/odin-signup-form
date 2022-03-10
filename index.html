@@ -37,37 +37,71 @@
 				Sign up <em>now</em> to get started.
 			</p>
 			<p>You <em>know</em> you want to.</p>
+			<form action="" method="post">
+				<div class="form-container">
+					<p>Let's do this!</p>
 
-			<div class="form-container">
-				<p>Let's do this!</p>
-				<div class="form-entry">
-					<label for="first-name">First Name</label>
-					<input type="text" name="name" id="first-name" />
+					<div class="form-entry">
+						<input
+							type="text"
+							name="name"
+							id="first-name"
+							placeholder=" "
+							required
+						/>
+						<label for="first-name">First Name</label>
+					</div>
+					<div class="form-entry">
+						<input
+							type="text"
+							name="lname"
+							id="last-name"
+							placeholder=" "
+						/>
+						<label for="last-name">Last Name</label>
+					</div>
+					<div class="form-entry">
+						<input
+							type="email"
+							name="mail"
+							id="mail"
+							placeholder=" "
+							required
+						/>
+						<label for="mail">Email</label>
+					</div>
+					<div class="form-entry">
+						<input
+							type="text"
+							name="tel"
+							id="tel"
+							placeholder=" "
+						/>
+						<label for="tel">Phone Number</label>
+					</div>
+					<div class="form-entry">
+						<input
+							type="password"
+							name="pwd"
+							id="pwd"
+							placeholder=" "
+							required
+						/>
+						<label for="pwd">Password</label>
+					</div>
+					<div class="form-entry">
+						<input
+							type="password"
+							name="owd-confirm"
+							id="pwd-conf"
+							required
+							placeholder=" "
+						/>
+						<label for="pwd-conf">Confirm Password</label>
+					</div>
 				</div>
-				<div class="form-entry">
-					<label for="last-name">Last Name</label>
-					<input type="text" name="lname" id="last-name" />
-				</div>
-				<div class="form-entry">
-					<label for="mail">Email</label>
-					<input type="email" name="mail" id="mail" />
-				</div>
-
-				<div class="form-entry">
-					<label for="tel">Phone Number</label>
-					<input type="text" name="tel" id="tel" />
-				</div>
-
-				<div class="form-entry">
-					<label for="pwd">Password</label>
-					<input type="password" name="pwd" id="pwd" />
-				</div>
-				<div class="form-entry">
-					<label for="pwd-conf">Confirm Password</label>
-					<input type="password" name="owd-confirm" id="pwd-conf" />
-				</div>
-			</div>
-			<button type="submit">Create Account</button>
+				<button type="submit">Create Account</button>
+			</form>
 			<p>Already have account? <a href="#">Log in</a></p>
 		</div>
 	</body>

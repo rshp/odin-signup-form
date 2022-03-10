@@ -85,8 +85,8 @@ input {
 
 label {
 	position: absolute;
-	top: 2px;
-	left: 5px;
+	top: 0.5rem;
+	left: 0.5rem;
 }
 
 p {
@@ -106,7 +106,7 @@ button {
 	margin: 2rem;
 }
 /* style */
-.form-container {
+form {
 	background-color: rgb(245, 239, 220);
 	box-shadow: 15px 5px 21px 9px #c1a699;
 }
@@ -120,11 +120,13 @@ button {
 
 label {
 	color: rgb(189, 189, 189);
+	transition: all 0.2s ease-out;
 }
 
 input {
 	border-radius: 0.5rem;
 	background-color: #f5eeeb;
+	padding: 0.5rem;
 }
 
 .logo-container {
@@ -138,4 +140,17 @@ input {
 
 .side-container a:visited {
 	color: #c08162;
+}
+
+input:focus {
+	outline: none;
+	border-width: 2px;
+	border-color: #ad5f38;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+	top: -2rem;
+	color: #ad5f38;
+	transition: all 0.2s ease-out;
 }
