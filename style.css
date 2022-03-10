@@ -8,6 +8,11 @@ body {
 }
 
 /* Layout */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
 body {
 	display: flex;
 }
@@ -17,17 +22,16 @@ body {
 	background-position: center;
 	background-size: cover;
 	flex: 1;
-	height: 90vh;
+	height: 100vh;
 }
 
 .main-container {
 	flex: 2;
 	display: flex;
 	flex-direction: column;
-	padding: 2rem;
 	align-items: flex-start;
 	justify-content: center;
-	gap: 2rem;
+	/* gap: 2rem; */
 }
 
 .form-container {
@@ -38,7 +42,13 @@ body {
 
 .form-entry {
 	position: relative;
+	display: flex;
+	flex: 1;
 }
+input {
+	flex: 1;
+}
+
 label {
 	position: absolute;
 	top: 2px;
@@ -53,4 +63,15 @@ p {
 	width: 100%;
 	max-width: 100%;
 }
+
+.main-container > *:not(button) {
+	padding: 2rem;
+}
+
+button {
+	margin-left: 2rem;
+}
 /* style */
+.form-container {
+	background-color: beige;
+}
