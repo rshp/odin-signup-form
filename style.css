@@ -71,7 +71,7 @@ body {
 .form-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 3rem 2rem;
+	gap: 4rem 2rem;
 }
 
 .form-entry {
@@ -157,4 +157,41 @@ input:not(:placeholder-shown) + label {
 
 .required {
 	color: rgb(216, 86, 35);
+}
+
+/* Form validation */
+input:valid:not(:placeholder-shown) {
+	border-color: greenyellow;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-color: red;
+}
+
+input {
+	position: relative;
+}
+
+#tel:invalid:not(:placeholder-shown) + label::before {
+	content: 'Numbers only';
+	width: max-content;
+	color: red;
+	position: absolute;
+	top: 5rem;
+}
+
+#mail:invalid:not(:placeholder-shown) + label::before {
+	content: 'Enter correct mail';
+	width: max-content;
+	color: red;
+	position: absolute;
+	top: 5rem;
+}
+
+#first-name:invalid:not(:placeholder-shown) + label::before {
+	content: 'At least 3 letters';
+	width: max-content;
+	color: red;
+	position: absolute;
+	top: 5rem;
 }
