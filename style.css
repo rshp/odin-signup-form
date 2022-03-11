@@ -196,6 +196,22 @@ input {
 	top: 5rem;
 }
 
+#pwd:invalid:not(:placeholder-shown) + label::before {
+	content: 'Passwords do not match';
+	width: max-content;
+	color: red;
+	position: absolute;
+	top: 5rem;
+}
+
+#pwd-conf:invalid:not(:placeholder-shown) + label::before {
+	content: 'Passwords do not match';
+	width: max-content;
+	color: red;
+	position: absolute;
+	top: 5rem;
+}
+
 @media only screen and (max-width: 600px) {
 	body {
 		flex-direction: column;
