@@ -103,7 +103,7 @@ p {
 }
 
 button {
-	margin: 2rem;
+	margin-top: 2rem;
 }
 /* style */
 form {
@@ -194,4 +194,13 @@ input {
 	color: red;
 	position: absolute;
 	top: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		flex-direction: column;
+	}
+	.logo-container {
+		margin-top: 20px;
+	}
 }
